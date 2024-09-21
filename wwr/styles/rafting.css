@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent1-color: #e74c3c;
+    --accent2-color: #f1c40f;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 10px; /* Padding around the nav */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Align items horizontally */
+}
+
+nav li {
+    margin-right: 20px; /* Space between links */
+}
+
+nav a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 8px 16px; /* Clickable area padding */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+nav a:hover {
+    background-color: #555; /* Change background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Optional: Limit height if desired */
+}
+
+h1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+footer {
+    background-color: var(--accent1-color);
+    text-align: center;
+    color: white;
+    padding: 20px; /* Increased padding for better spacing */
+    margin-top: 20px; /* Space above the footer */
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack links vertically */
+    }
+
+    nav li {
+        margin-bottom: 10px; /* Space between stacked links */
+    }
+}
