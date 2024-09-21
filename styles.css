@@ -1,28 +1,67 @@
+/* General styling for the main content area */
 main {
     max-width: 840px;
+    margin: 0 auto; /* Centers the main content horizontally */
+    padding: 2rem; /* Adds padding around the main content */
+    background-color: #ffffff; /* White background for contrast */
+    color: #333; /* Dark text for readability */
+    font-family: 'Arial', sans-serif; /* Clean, readable font */
 }
+
+/* Styling for the aside element */
 aside {
     width: 20rem;
-    margin: 1rem;
+    margin: 1rem auto; /* Centers the aside content */
     border: 1px solid rgba(0, 0, 0, 0.2); /* Light transparent border */
     padding: 1rem;
-    background-color: #f0f0f0; /* Light gray background */
-    color: #333; /* Dark text */
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #004d40; /* Dark teal text */
     text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+
+/* Styling for images inside the aside section */
 aside img {
     width: 200px;
     height: auto; /* Keeps the aspect ratio intact */
+    border-radius: 10px; /* Adds rounded corners */
+    margin-bottom: 1rem; /* Adds space below the image */
 }
+
+/* Styling for the profile image inside the main section */
 main img {
     width: 150px;
     height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 1rem; /* Adds space below the image */
 }
+
+/* Styling for paragraphs */
 p {
     padding: 0;
+    line-height: 1.6; /* Improves readability with better line spacing */
 }
+
+/* Footer styling */
 footer {
     margin-top: 2rem; /* Adds space between the main content and footer */
-    border-top: 1px solid rgba(0, 0, 0, 0.2); /* Top border */
-    text-align: center; /* Centers text in the footer */
+    padding: 1rem; /* Adds padding inside the footer */
+    border-top: 2px solid #00796b; /* Teal top border for distinction */
+    background-color: #004d40; /* Dark teal background for the footer */
+    color: #ffffff; /* White text for contrast */
+    text-align: center; /* Centers the footer text */
+    font-size: 0.9rem; /* Slightly smaller font for the footer */
+}
+
+/* Hover effects for links in the navigation */
+nav a {
+    color: #00796b; /* Teal color for links */
+    text-decoration: none; /* Removes underline from links */
+    margin: 0 1rem;
+    font-weight: bold; /* Makes the links stand out */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    color: #004d40; /* Dark teal on hover */
 }
