@@ -44,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: var(--accent1-color); /* Updated hover color */
     border-radius: 5px;
 }
 
@@ -64,6 +64,7 @@ h1 {
     left: 50px;
     color: white;
     font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Improved readability */
 }
 
 footer {
@@ -91,6 +92,10 @@ footer img {
 
     nav li {
         margin-bottom: 10px;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr; /* Stack items on small screens */
     }
 }
 
@@ -139,4 +144,26 @@ footer img {
 
 .contact-form button:hover {
     background-color: #555;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
 }
