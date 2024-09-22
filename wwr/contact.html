@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us for questions about our rafting services.">
+    <title>Contact Us - Rafting Company</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <h1>Rafting Company</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <section class="company-info">
+            <h3>Company Information</h3>
+            <p>Address: 123 Rafting Lane, River City, USA</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: <a href="mailto:info@raftingcompany.com">info@raftingcompany.com</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345095673!2d144.9537353156862!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f13c8cf%3A0xfaa5b56d7f91e4dc!2s123%20Rafting%20Lane%2C%20River%20City%2C%20USA!5e0!3m2!1sen!2sau!4v1616012372014!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="employee-profiles">
+            <h3>Meet Our Team</h3>
+            <div class="profile">
+                <img src="images/employee1.jpg" alt="John Doe - Rafting Guide">
+                <p>John Doe - Rafting Guide</p>
+            </div>
+            <div class="profile">
+                <img src="images/employee2.jpg" alt="Jane Smith - Customer Service">
+                <p>Jane Smith - Customer Service</p>
+            </div>
+            <div class="profile">
+                <img src="images/employee3.jpg" alt="Mike Johnson - Safety Officer">
+                <p>Mike Johnson - Safety Officer</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Purpose of your message:</p>
+                <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+                <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+                <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rafting Company</p>
+        <a href="wireframe-image.png" target="_blank">View Wireframe</a>
+    </footer>
+</body>
+</html>

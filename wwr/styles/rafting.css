@@ -8,39 +8,44 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 header {
     background-color: var(--secondary-color);
+    color: white;
     text-align: center;
+    padding: 10px 0;
 }
 
 nav {
     background-color: var(--secondary-color);
-    padding: 10px; /* Padding around the nav */
+    padding: 10px;
 }
 
 nav ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Align items horizontally */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav li {
-    margin-right: 20px; /* Space between links */
+    margin-right: 20px;
 }
 
 nav a {
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    padding: 8px 16px; /* Clickable area padding */
-    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #555; /* Change background on hover */
-    border-radius: 5px; /* Rounded corners on hover */
+    background-color: #555;
+    border-radius: 5px;
 }
 
 .hero {
@@ -50,7 +55,7 @@ nav a:hover {
 .hero img {
     width: 100%;
     height: auto;
-    max-height: 500px; /* Optional: Limit height if desired */
+    max-height: 500px;
 }
 
 h1 {
@@ -63,10 +68,10 @@ h1 {
 
 footer {
     background-color: var(--accent1-color);
-    text-align: center;
     color: white;
-    padding: 20px; /* Increased padding for better spacing */
-    margin-top: 20px; /* Space above the footer */
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 footer a {
@@ -78,12 +83,60 @@ footer img {
     height: 30px;
 }
 
+/* Media Queries */
 @media (max-width: 600px) {
     nav ul {
-        flex-direction: column; /* Stack links vertically */
+        flex-direction: column;
     }
 
     nav li {
-        margin-bottom: 10px; /* Space between stacked links */
+        margin-bottom: 10px;
     }
+}
+
+/* Contact Page Styles */
+.company-info,
+.employee-profiles,
+.contact-form {
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
 }
