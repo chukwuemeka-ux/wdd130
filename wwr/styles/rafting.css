@@ -1,169 +1,96 @@
+/* Define color variables using :root */
 :root {
-    --primary-color: #3498db;
+    --primary-color: #3498db; /* Example color */
     --secondary-color: #2ecc71;
     --accent1-color: #e74c3c;
     --accent2-color: #f1c40f;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Roboto', sans-serif;
-    color: var(--primary-color);
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-header {
-    background-color: var(--secondary-color);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav {
-    background-color: var(--secondary-color);
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: var(--accent1-color); /* Updated hover color */
-    border-radius: 5px;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    max-height: 500px;
-}
-
-h1 {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    color: white;
+  }
+  
+  h1 {
     font-family: 'Lobster', cursive;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Improved readability */
-}
-
-footer {
-    background-color: var(--accent1-color);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-footer a {
-    margin: 0 10px;
-}
-
-footer img {
-    width: 30px;
-    height: 30px;
-}
-
-/* Media Queries */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        margin-bottom: 10px;
-    }
-
-    .grid-layout {
-        grid-template-columns: 1fr; /* Stack items on small screens */
-    }
-}
-
-/* Contact Page Styles */
-.company-info,
-.employee-profiles,
-.contact-form {
-    margin-bottom: 20px;
-}
-
-.profile {
+    color: var(--primary-color);
+  }
+  
+  h2 {
+    color: var(--secondary-color);
+  }
+  
+  p {
+    color: #333;
+  }
+  
+  /* Header styling */
+  header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
-}
-
-.profile img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.contact-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact-form button {
-    background-color: #333;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #555;
-}
-
-.hero {
+    padding: 1em;
+  }
+  
+  nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: var(--primary-color);
+  }
+  
+  .hero {
     position: relative;
-    text-align: center;
-}
-
-.hero-image {
+  }
+  
+  .hero-img {
     width: 100%;
     height: auto;
-}
-
-.grid-layout {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.grid-item {
-    border: 1px solid #ccc;
-    padding: 15px;
+    display: block;
+  }
+  
+  .hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 3em;
+    color: white;
+  }
+  
+  .hero article {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+    width: 300px;
+  }
+  
+  .customer-img {
+    float: right;
+    width: 100px;
+    margin-left: 1em;
+  }
+  
+  section {
+    padding: 2em;
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  
+  footer {
     text-align: center;
-}
+    padding: 1em;
+    background-color: var(--accent2-color);
+    color: white;
+  }
+  
+  footer nav.sociallinks a img {
+    width: 24px;
+    margin: 0 10px;
+  }
+  
+  /* Remove text-decoration from social media links */
+  footer nav.sociallinks a {
+    text-decoration: none;
+  }  
