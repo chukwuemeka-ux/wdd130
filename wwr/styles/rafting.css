@@ -9,6 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
+  color: #222; /* Ensure text is readable */
 }
 
 header {
@@ -33,6 +34,11 @@ nav a {
   text-decoration: none;
   font-size: 1.1em;
   padding: 10px;
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+  color: #ffcc00; /* Change color on hover for better visibility */
 }
 
 .hero {
@@ -51,18 +57,21 @@ nav a {
 
 .adventures {
   display: flex;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
   justify-content: space-between;
   padding: 20px;
 }
 
 .adventures figure {
-  width: 18%;
+  flex: 1 1 18%; /* Responsive sizing */
+  margin: 10px; /* Add margin for spacing */
 }
 
 .adventures img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 5px; /* Add subtle rounding to images */
 }
 
 .adventures figcaption {
@@ -74,6 +83,7 @@ nav a {
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Align items vertically */
   padding: 10px;
   background-color: #333;
   color: #fff;
@@ -99,14 +109,34 @@ footer p {
 
 /* Color contrast adjustments */
 body, p, h1, h2 {
-  color: #222;
+  color: #222; /* Ensures no contrast issues */
 }
 
 /* Ensure no color contrast issues */
 a {
-  color: #1e90ff;
+  color: #1e90ff; /* Bright link color for visibility */
 }
 
 a:hover {
-  color: #6495ed;
+  color: #6495ed; /* Slightly lighter on hover for contrast */
+}
+
+/* Additional styles for better accessibility */
+input, button {
+  font-family: 'Roboto', sans-serif; /* Ensure form elements have consistent font */
+  font-size: 1em; /* Make text inside buttons larger for better readability */
+}
+
+button {
+  background-color: #1e90ff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for buttons */
+  padding: 10px 15px; /* Adequate padding */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #6495ed; /* Change background on hover */
 }

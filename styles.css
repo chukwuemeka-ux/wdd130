@@ -4,8 +4,9 @@ main {
     margin: 0 auto; /* Centers the main content horizontally */
     padding: 2rem; /* Adds padding around the main content */
     background-color: #ffffff; /* White background for contrast */
-    color: #333; /* Dark text for readability */
-    font-family: 'Arial', sans-serif; /* Clean, readable font */
+    color: #333333; /* Dark text for readability */
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    line-height: 1.6; /* Improved line spacing for readability */
 }
 
 /* Styling for the aside element */
@@ -26,6 +27,7 @@ aside img {
     height: auto; /* Keeps the aspect ratio intact */
     border-radius: 10px; /* Adds rounded corners */
     margin-bottom: 1rem; /* Adds space below the image */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
 }
 
 /* Styling for the profile image inside the main section */
@@ -34,12 +36,13 @@ main img {
     height: auto;
     border-radius: 50%; /* Makes the image circular */
     margin-bottom: 1rem; /* Adds space below the image */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15); /* Adds subtle shadow for focus */
 }
 
 /* Styling for paragraphs */
 p {
-    padding: 0;
-    line-height: 1.6; /* Improves readability with better line spacing */
+    margin: 0 0 1rem; /* Adds consistent spacing below paragraphs */
+    line-height: 1.8; /* Increases line spacing for readability */
 }
 
 /* Footer styling */
@@ -53,14 +56,16 @@ footer {
     font-size: 0.9rem; /* Slightly smaller font for the footer */
 }
 
-/* Hover effects for links in the navigation */
+/* Navigation link styling */
 nav a {
     color: #00796b; /* Teal color for links */
     text-decoration: none; /* Removes underline from links */
     margin: 0 1rem;
     font-weight: bold; /* Makes the links stand out */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
 }
 
+/* Hover effects for navigation links */
 nav a:hover {
     text-decoration: underline; /* Adds underline on hover */
     color: #004d40; /* Dark teal on hover */

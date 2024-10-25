@@ -11,23 +11,25 @@
 <body>
     <header>
         <h1>Rafting Company</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="trips.html">Trips</a>
+        <nav aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <img src="images/hero-image.jpg" alt="Exciting Rafting Adventure" class="hero-image">
-            <h2>Your Adventure Awaits!</h2>
+        <section class="hero" aria-labelledby="hero-title">
+            <img src="images/hero-image.jpg" alt="Exciting Rafting Adventure on a scenic river" class="hero-image">
+            <h2 id="hero-title">Your Adventure Awaits!</h2>
         </section>
 
         <section class="newsletter">
             <h3>Sign Up for Our Newsletter</h3>
-            <form action="#" method="POST">
+            <form action="#" method="POST" aria-label="Newsletter Signup Form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -38,20 +40,20 @@
             </form>
         </section>
 
-        <section class="cta">
-            <h3>Explore Our Trips</h3>
+        <section class="cta" aria-labelledby="cta-heading">
+            <h3 id="cta-heading">Explore Our Trips</h3>
             <p>Join us for an unforgettable rafting experience!</p>
             <a href="trips.html" class="btn">View Trips</a>
         </section>
 
-        <section class="grid-layout">
+        <section class="grid-layout" aria-label="Trip Highlights">
             <div class="grid-item">
-                <img src="images/rafting1.jpg" alt="Rafting Experience">
+                <img src="images/rafting1.jpg" alt="Group rafting on a fast river">
                 <h4>Experience the Thrill</h4>
                 <p>Join our guided rafting tours for an adventure of a lifetime.</p>
             </div>
             <div class="grid-item">
-                <img src="images/rafting2.jpg" alt="Scenic River Views">
+                <img src="images/rafting2.jpg" alt="Beautiful river with scenic mountain views">
                 <h4>Explore Beautiful Scenery</h4>
                 <p>Raft through stunning landscapes and enjoy nature at its best.</p>
             </div>
